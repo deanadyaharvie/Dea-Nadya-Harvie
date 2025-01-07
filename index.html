@@ -193,60 +193,190 @@
         </div>
         <!-- Service End -->
 
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center"><span></span>Projects<span></span></p>
-                    <h1 class="text-center mb-5">Recently Completed Projects</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <h5 class="mb-3">KALKULATOR</h5>
-                            <p class="m-0"></p>
-                            <a class="btn btn-square" href="kalkulatorJS/index.html"><i class="fa fa-arrow-right"></i></a>
-                        </div>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <style>
+                .filter-buttons {
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+        
+                .filter-btn {
+                    padding: 8px 20px;
+                    margin: 0 5px;
+                    border: 2px solid #6244C5;
+                    background: transparent;
+                    color: #6244C5;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                }
+        
+                .filter-btn.active {
+                    background: #6244C5;
+                    color: white;
+                }
+        
+                .service-item {
+                    transition: all 0.3s ease;
+                    height: 100%;
+                }
+        
+                .hide {
+                    display: none !important;
+                }
+        
+                .show {
+                    display: flex !important;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container-xxl py-5">
+                <div class="container py-5 px-lg-5">
+                    <div class="wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="section-title text-secondary justify-content-center"><span></span>My Portfolio<span></span></p>
+                        <h1 class="text-center mb-5">Certificates & Projects</h1>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <h5 class="mb-3">FORM LOGIN</h5>
-                            <p class="m-0"></p>
-                            <a class="btn btn-square" href="formlogin/index.html"><i class="fa fa-arrow-right"></i></a>
-                        </div>
+        
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons wow fadeInUp" data-wow-delay="0.1s">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="certificate">Certificates</button>
+                        <button class="filter-btn" data-filter="project">Projects</button>
+                        <button class="filter-btn" data-filter="game">Games</button>
+                        <button class="filter-btn" data-filter="system">Systems</button>
+                        <button class="filter-btn" data-filter="dashboard">Dashboards</button>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <h5 class="mb-3">GAME</h5>
-                            <p class="m-0"></p>
-                            <a class="btn btn-square" href="snake/snake.html"><i class="fa fa-arrow-right"></i></a>
+        
+                    <div class="row g-4">
+                        <!-- Certificates -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-category="certificate">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">Introduction to HTML</h5>
+                                <p class="m-0">SoloLearn Certificate</p>
+                                <a class="btn btn-square" href="https://api2.sololearn.com/v2/certificates/CC-RUGMGG2A/image/png?t=638652597738611400"><i class="fa fa-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <h5 class="mb-3">SISTEM INFORMASI</h5>
-                            <p class="m-0"></p>
-                            <a class="btn btn-square" href="diagram/index.html"><i class="fa fa-arrow-right"></i></a>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="certificate">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">JavaScript Intermediate</h5>
+                                <p class="m-0">SoloLearn Certificate</p>
+                                <a class="btn btn-square" href="https://api2.sololearn.com/v2/certificates/CC-SA4MVCE1/image/png?t=638657940749473410"><i class="fa fa-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <h5 class="mb-3">DASHBOARD</h5>
-                            <p class="m-0"></p>
-                            <a class="btn btn-square" href="dashboard_dea1/index.html"><i class="fa fa-arrow-right"></i></a>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" data-category="certificate">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">Introduction to CSS</h5>
+                                <p class="m-0">SoloLearn Certificate</p>
+                                <a class="btn btn-square" href="https://api2.sololearn.com/v2/certificates/CC-IVIKFIYR/image/png?t=638651472521639210"><i class="fa fa-arrow-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <h5 class="mb-3">DIAGRAM PENJUALAN</h5>
-                            <p class="m-0"></p>
-                            <a class="btn btn-square" href="dashboard_ecommercedea/index.html"><i class="fa fa-arrow-right"></i></a>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="certificate">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">Introduction to JavaScript</h5>
+                                <p class="m-0">SoloLearn Certificate</p>
+                                <a class="btn btn-square" href="https://api2.sololearn.com/v2/certificates/CC-0WEW4NHC/image/png?t=638654623995508400"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+        
+                        <!-- Projects -->
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-category="project">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">KALKULATOR</h5>
+                                <p class="m-0">Interactive Calculator Application</p>
+                                <a class="btn btn-square" href="kalkulatorJS/index.html"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="system">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">FORM LOGIN</h5>
+                                <p class="m-0">User Authentication System</p>
+                                <a class="btn btn-square" href="formlogin/index.html"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" data-category="game">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">GAME</h5>
+                                <p class="m-0">Interactive Snake Game</p>
+                                <a class="btn btn-square" href="snake/snake.html"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-category="system">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">SISTEM INFORMASI</h5>
+                                <p class="m-0">Information Management System</p>
+                                <a class="btn btn-square" href="diagram/index.html"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="dashboard">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">DASHBOARD</h5>
+                                <p class="m-0">Analytics Dashboard</p>
+                                <a class="btn btn-square" href="dashboard_dea1/index.html"><i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-category="dashboard">
+                            <div class="service-item d-flex flex-column text-center rounded">
+                                <h5 class="mb-3">DIAGRAM PENJUALAN</h5>
+                                <p class="m-0">Sales Analytics Dashboard</p>
+                                <a class="btn btn-square" href="dashboard_ecommercedea/index.html"><i class="fa fa-arrow-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Service End -->
+        
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Mengambil semua tombol filter dan item portfolio
+                    const filterButtons = document.querySelectorAll('.filter-btn');
+                    const portfolioItems = document.querySelectorAll('[data-category]');
+        
+                    // Fungsi untuk filter items
+                    function filterItems(category) {
+                        portfolioItems.forEach(item => {
+                            const itemCategory = item.getAttribute('data-category');
+                            
+                            if (category === 'all' || category === itemCategory) {
+                                // Animasi fade out
+                                item.style.opacity = '0';
+                                
+                                // Menghapus class hide setelah fade out
+                                setTimeout(() => {
+                                    item.classList.remove('hide');
+                                    // Animasi fade in
+                                    setTimeout(() => {
+                                        item.style.opacity = '1';
+                                    }, 50);
+                                }, 300);
+                            } else {
+                                // Animasi fade out sebelum hide
+                                item.style.opacity = '0';
+                                setTimeout(() => {
+                                    item.classList.add('hide');
+                                }, 300);
+                            }
+                        });
+                    }
+        
+                    // Event listener untuk tombol filter
+                    filterButtons.forEach(button => {
+                        button.addEventListener('click', () => {
+                            // Update active state tombol
+                            filterButtons.forEach(btn => btn.classList.remove('active'));
+                            button.classList.add('active');
+                            
+                            // Filter items berdasarkan kategori
+                            const filterValue = button.getAttribute('data-filter');
+                            filterItems(filterValue);
+                        });
+                    });
+                });
+            </script>
+        </body>
+        </html>
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
